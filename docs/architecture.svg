@@ -1,0 +1,81 @@
+<svg viewBox="0 0 980 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="980" height="460" fill="#0d1117"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+  <style>
+    .box{fill:#161b22;stroke:#30363d;stroke-width:1.5;rx:8;}
+    .title{fill:#e6edf3;font-size:15px;font-weight:600;}
+    .sub{fill:#8b949e;font-size:11.5px;}
+    .edge{stroke:#58a6ff;stroke-width:1.6;fill:none;marker-end:url(#arrow);}
+    .lbl{fill:#58a6ff;font-size:11px;}
+  </style>
+
+  <text x="490" y="34" text-anchor="middle" fill="#e6edf3" font-size="20" font-weight="700">MT5 Grid Bot — Precision Grid Engine V12</text>
+  <text x="490" y="54" text-anchor="middle" class="sub">Modular Python port of a Pine Script breakout-grid strategy, live on MetaTrader 5</text>
+
+  <!-- .env -->
+  <rect x="30" y="90" width="150" height="60" class="box"/>
+  <text x="105" y="115" text-anchor="middle" class="title">.env</text>
+  <text x="105" y="133" text-anchor="middle" class="sub">credentials + params</text>
+
+  <!-- config.py -->
+  <rect x="220" y="90" width="160" height="60" class="box"/>
+  <text x="300" y="115" text-anchor="middle" class="title">config.py</text>
+  <text x="300" y="133" text-anchor="middle" class="sub">frozen Config dataclass</text>
+
+  <!-- grid_engine -->
+  <rect x="420" y="90" width="200" height="70" class="box"/>
+  <text x="520" y="115" text-anchor="middle" class="title">grid_engine.py</text>
+  <text x="520" y="132" text-anchor="middle" class="sub">pure geometry, no MT5</text>
+  <text x="520" y="146" text-anchor="middle" class="sub">open ± i·spacing → TP/SL</text>
+
+  <!-- mt5_client -->
+  <rect x="660" y="90" width="200" height="70" class="box"/>
+  <text x="760" y="115" text-anchor="middle" class="title">mt5_client.py</text>
+  <text x="760" y="132" text-anchor="middle" class="sub">connect · quotes</text>
+  <text x="760" y="146" text-anchor="middle" class="sub">place / cancel / flatten</text>
+
+  <!-- bot.py -->
+  <rect x="340" y="220" width="300" height="90" class="box" stroke="#3fb950"/>
+  <text x="490" y="248" text-anchor="middle" class="title">bot.py — GridBot</text>
+  <text x="490" y="266" text-anchor="middle" class="sub">reconcile loop: rebuild grid, dedupe vs</text>
+  <text x="490" y="281" text-anchor="middle" class="sub">live orders, chop-range guard, respect caps</text>
+  <text x="490" y="296" text-anchor="middle" class="sub">1s poll · event-driven, no timer churn</text>
+
+  <!-- run.py -->
+  <rect x="30" y="240" width="160" height="60" class="box"/>
+  <text x="110" y="265" text-anchor="middle" class="title">run.py</text>
+  <text x="110" y="283" text-anchor="middle" class="sub">CLI entry + signals</text>
+
+  <!-- gui.py -->
+  <rect x="790" y="240" width="160" height="60" class="box"/>
+  <text x="870" y="265" text-anchor="middle" class="title">gui.py</text>
+  <text x="870" y="283" text-anchor="middle" class="sub">Tkinter dashboard</text>
+
+  <!-- logger -->
+  <rect x="30" y="360" width="160" height="60" class="box"/>
+  <text x="110" y="385" text-anchor="middle" class="title">logger.py</text>
+  <text x="110" y="403" text-anchor="middle" class="sub">console + rotating file</text>
+
+  <!-- broker -->
+  <rect x="700" y="360" width="250" height="70" class="box" stroke="#d29922"/>
+  <text x="825" y="388" text-anchor="middle" class="title">MetaTrader 5 Terminal</text>
+  <text x="825" y="405" text-anchor="middle" class="sub">broker-side TP/SL, tick-by-tick fills</text>
+  <text x="825" y="419" text-anchor="middle" class="sub">(demo or live account)</text>
+
+  <!-- edges -->
+  <path class="edge" d="M180,120 H220"/>
+  <path class="edge" d="M300,150 V185 H520 V160"/>
+  <path class="edge" d="M300,150 V270 H340"/>
+  <path class="edge" d="M640,265 H660 V160"/>
+  <path class="edge" d="M760,160 V240 H790"/>
+  <path class="edge" d="M110,240 V265" transform="translate(0,-30)"/>
+  <path class="edge" d="M110,300 V300" />
+  <path class="edge" d="M110,300 V360"/>
+  <path class="edge" d="M190,270 H340"/>
+  <path class="edge" d="M860,160 V390 H700"/>
+  <text x="960" y="452" text-anchor="end" class="sub">Architect: SAKSHAM SWAMI</text>
+</svg>

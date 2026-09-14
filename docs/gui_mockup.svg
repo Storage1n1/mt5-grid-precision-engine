@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1040 720" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1040" height="720" fill="#1e222d"/>
+  <rect x="0" y="0" width="1040" height="30" fill="#2a2e39"/>
+  <text x="12" y="20" fill="#d1d4dc" font-size="13">MT5 Grid Bot — Precision Grid Engine V12</text>
+
+  <!-- settings panel -->
+  <rect x="10" y="40" width="220" height="240" rx="6" fill="#262b38" stroke="#3a3f4c"/>
+  <text x="24" y="60" fill="#9aa4b2" font-size="12" font-weight="600">Settings</text>
+  <g font-size="11" fill="#d1d4dc">
+    <text x="24" y="82">Symbol</text><rect x="140" y="70" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="83">BTCUSD</text>
+    <text x="24" y="104">Spacing $</text><rect x="140" y="92" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="105">5.00</text>
+    <text x="24" y="126">Levels</text><rect x="140" y="114" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="127">10</text>
+    <text x="24" y="148">SL divisor</text><rect x="140" y="136" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="149">2.0</text>
+    <text x="24" y="170">Lot</text><rect x="140" y="158" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="171">0.01</text>
+    <text x="24" y="192">Anchor TF</text><rect x="140" y="180" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="193">10S</text>
+    <text x="24" y="214">Max positions</text><rect x="140" y="202" width="75" height="18" fill="#1b1f29" stroke="#3a3f4c"/><text x="146" y="215">20</text>
+    <rect x="24" y="222" width="12" height="12" fill="#1b1f29" stroke="#3a3f4c"/><text x="42" y="232">DRY RUN (no real orders)</text>
+    <rect x="24" y="240" width="12" height="12" fill="#3fb950" stroke="#3a3f4c"/><text x="42" y="250">Close all on Stop/Exit</text>
+  </g>
+  <rect x="24" y="258" width="90" height="22" rx="4" fill="#238636"/><text x="69" y="273" text-anchor="middle" fill="#fff" font-size="11">▶ Start</text>
+  <rect x="124" y="258" width="90" height="22" rx="4" fill="#30363d"/><text x="169" y="273" text-anchor="middle" fill="#8b949e" font-size="11">■ Stop</text>
+
+  <!-- status panel -->
+  <rect x="240" y="40" width="790" height="240" rx="6" fill="#262b38" stroke="#3a3f4c"/>
+  <text x="254" y="60" fill="#9aa4b2" font-size="12" font-weight="600">Status</text>
+  <g font-size="11.5" fill="#d1d4dc">
+    <text x="254" y="84">Connection:</text><text x="340" y="84" fill="#3fb950" font-weight="700">● DRY RUN</text>
+    <text x="560" y="84">Account:</text><text x="640" y="84" font-weight="700">51234567 (USD)</text>
+    <text x="254" y="108">Balance:</text><text x="340" y="108" font-weight="700">10,000.00</text>
+    <text x="560" y="108">Equity:</text><text x="640" y="108" font-weight="700">10,042.30</text>
+    <text x="254" y="132">Floating PnL:</text><text x="340" y="132" font-weight="700">+42.30</text>
+    <text x="560" y="132">Realized net:</text><text x="640" y="132" fill="#3fb950" font-weight="700">+118.75</text>
+    <text x="254" y="156">Bid:</text><text x="340" y="156" font-weight="700">67,412.10</text>
+    <text x="560" y="156">Ask:</text><text x="640" y="156" font-weight="700">67,412.90</text>
+    <text x="254" y="180">Mid price:</text><text x="340" y="180" font-weight="700">67,412.50</text>
+    <text x="560" y="180">Wins / Losses:</text><text x="640" y="180" font-weight="700">14 / 6</text>
+    <text x="254" y="204">Open positions:</text><text x="340" y="204" font-weight="700">3</text>
+    <text x="560" y="204">Pending orders:</text><text x="640" y="204" font-weight="700">17</text>
+    <text x="254" y="228">Range guard:</text><text x="340" y="228" fill="#8b949e" font-weight="700">clear</text>
+  </g>
+
+  <!-- tables -->
+  <rect x="10" y="292" width="510" height="230" rx="6" fill="#262b38" stroke="#3a3f4c"/>
+  <text x="24" y="312" fill="#9aa4b2" font-size="12" font-weight="600">Computed Grid</text>
+  <g font-size="10.5" fill="#8b949e" font-weight="700">
+    <text x="24" y="332">SIDE</text><text x="90" y="332">IDX</text><text x="140" y="332">ENTRY</text><text x="220" y="332">TP</text><text x="300" y="332">SL</text><text x="380" y="332">STATE</text>
+  </g>
+  <g font-size="10.5" fill="#d1d4dc">
+    <text x="24" y="352">BUY</text><text x="90" y="352">+1</text><text x="140" y="352">67417.50</text><text x="220" y="352">67422.50</text><text x="300" y="352">67415.00</text><text x="380" y="352" fill="#3fb950">WORKING</text>
+    <text x="24" y="372">SELL</text><text x="90" y="372">-1</text><text x="140" y="372">67407.50</text><text x="220" y="372">67402.50</text><text x="300" y="372">67410.00</text><text x="380" y="372" fill="#3fb950">WORKING</text>
+    <text x="24" y="392">BUY</text><text x="90" y="392">+2</text><text x="140" y="392">67422.50</text><text x="220" y="392">67427.50</text><text x="300" y="392">67420.00</text><text x="380" y="392" fill="#d29922">FILLED</text>
+    <text x="24" y="412">SELL</text><text x="90" y="412">-2</text><text x="140" y="412">67402.50</text><text x="220" y="412">67397.50</text><text x="300" y="412">67405.00</text><text x="380" y="412">idle</text>
+  </g>
+
+  <rect x="530" y="292" width="500" height="230" rx="6" fill="#262b38" stroke="#3a3f4c"/>
+  <text x="544" y="312" fill="#9aa4b2" font-size="12" font-weight="600">Open Positions</text>
+  <g font-size="10.5" fill="#8b949e" font-weight="700">
+    <text x="544" y="332">TICKET</text><text x="620" y="332">TYPE</text><text x="680" y="332">VOL</text><text x="730" y="332">PRICE</text><text x="810" y="332">TP</text><text x="880" y="332">SL</text><text x="940" y="332">PNL</text>
+  </g>
+  <g font-size="10.5" fill="#d1d4dc">
+    <text x="544" y="352">88213410</text><text x="620" y="352">BUY</text><text x="680" y="352">0.01</text><text x="730" y="352">67422.50</text><text x="810" y="352">67427.50</text><text x="880" y="352">67420.00</text><text x="940" y="352" fill="#3fb950">+9.90</text>
+    <text x="544" y="372">88213422</text><text x="620" y="372">SELL</text><text x="680" y="372">0.01</text><text x="730" y="372">67402.50</text><text x="810" y="372">67397.50</text><text x="880" y="372">67405.00</text><text x="940" y="372" fill="#f85149">-2.10</text>
+  </g>
+
+  <!-- log -->
+  <rect x="10" y="534" width="1020" height="176" rx="6" fill="#131722" stroke="#3a3f4c"/>
+  <text x="24" y="554" fill="#9aa4b2" font-size="12" font-weight="600">Log</text>
+  <g font-size="10.5" fill="#8ab4f8" font-family="Consolas, monospace">
+    <text x="24" y="574">12:04:01 | INFO    | Static grid anchored ONCE @ 67412.50 (10 levels each side, dist=$5.00)</text>
+    <text x="24" y="590">12:04:12 | INFO    | Placed BUY_STOP tag=BUY:67417.5 tp=67422.5 sl=67415.0</text>
+    <text x="24" y="606">12:05:47 | INFO    | Fill: BUY 0.01 @ 67422.50 (ticket 88213410)</text>
+    <text x="24" y="622">12:06:03 | WARNING | Bad range detected — suspending sub-TP levels (window 67398.10-67421.90).</text>
+    <text x="24" y="638">12:08:15 | INFO    | Range cleared / broke out — re-arming levels.</text>
+  </g>
+  <text x="1010" y="708" text-anchor="end" fill="#5b6472" font-size="10.5">mockup for README — illustrative, not a live capture</text>
+</svg>
